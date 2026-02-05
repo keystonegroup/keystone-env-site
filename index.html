@@ -16,20 +16,7 @@
   </main>
 
   <div id="footer"></div>
-
-  <script>
-    fetch('assets/footer.html')
-      .then(response => response.text())
-      .then(html => {
-        const footerContainer = document.getElementById('footer');
-        footerContainer.innerHTML = html;
-
-        const yearSpan = footerContainer.querySelector('#currentYear');
-        if (yearSpan) {
-          yearSpan.textContent = new Date().getFullYear();
-        }
-      });
-  </script>
+  <script src="assets/footer/footer.js"></script>
 
 </body>
 
